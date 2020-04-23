@@ -1,4 +1,4 @@
-package animación;
+package básicos;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -11,8 +11,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-
-import imagen.ConImagen;
 
 public class ConAnimación implements KeyListener{
 	
@@ -56,9 +54,8 @@ public class ConAnimación implements KeyListener{
 
 	@Override
 	public void keyPressed(KeyEvent arg0) {
-		// TODO Auto-generated method stub
 		i++;
-		if(i==3)i=0;
+		if(i==4)i=0;
 		etiqueta1.setIcon(new ImageIcon(img.getSubimage((i*200), 0, 200, 192)));
 	}
 

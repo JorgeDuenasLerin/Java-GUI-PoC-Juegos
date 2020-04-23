@@ -1,4 +1,4 @@
-package imagen;
+package básicos;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -12,15 +12,15 @@ public class ConImagen {
 	public static void main(String[] args) {
 
 		// Crear la ventana de la aplicacion
-		JFrame ventana = new JFrame("Titulo de la ventana");
+		JFrame ventana = new JFrame("Ejemplo de imagen");
 		ventana.setSize(800, 400);
 		ventana.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		// Crear los componentes
-		//JLabel etiqueta1 = new JLabel("Esto es una label con información");
-		JLabel etiqueta1 = new JLabel(new ImageIcon(ConImagen.class.getResource("recursos/rick_morty.png")));
-		etiqueta1.setBorder(BorderFactory.createLineBorder(Color.red));
-		etiqueta1.setForeground(Color.BLUE);
+		// Acceso relativo al proyecto para que al exportarlo este la imagen
+		// La imagen debe estar dentro de una carpeta "recursos"
+		JLabel etiqueta1 = new JLabel(new ImageIcon(ConImagen.class.getResource("/recursos/rick_morty.png")));
+		etiqueta1.setBorder(BorderFactory.createLineBorder(Color.BLUE));
 				
 		// Crear un contenedor
 		JPanel panelDeContenido = new JPanel();
