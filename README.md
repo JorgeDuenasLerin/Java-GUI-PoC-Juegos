@@ -12,4 +12,7 @@ En estos ejemplo básicos hacemos funcionar la tecnología pero no hay diseño o
 - básicos.ConAnimación: Ejemplo que carga un sprite y lo anima con cada pulsación de tecla
 - básicos.ConAnimaciónConTimer: Ejemplo anterior modificado para que sea el timer el que cambie la imagen
 - básicos.Movimiento: Movemos la imagen con el teclado y la rotamos
+- básicos.VariosJFramPrefabricados: Hace uso de clases extendidas de JFrame con funcionalidad
 
+
+## Ejemplo mix
