@@ -14,7 +14,7 @@ public class PantallaMegaman extends JPanel{
 	
 	JLabel etiqueta1;
 	JLabel etiqueta2;
-	
+
 	public PantallaMegaman() {
 		etiqueta1 = new JLabel(new ImageIcon(ConImagen.class.getResource("/recursos/megaman.png")));
 		etiqueta1.setBorder(BorderFactory.createLineBorder(Color.BLUE));
