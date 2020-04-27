@@ -57,7 +57,7 @@ public class GameSounds {
 	}
 	
 	public static void staticPlay(int sound) {
-		INSTANCE.play(sound);
+		getInstance().play(sound);
 	}
 	
 	/*
