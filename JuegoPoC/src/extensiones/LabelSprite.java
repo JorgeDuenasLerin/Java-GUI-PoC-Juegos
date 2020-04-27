@@ -6,4 +6,5 @@ import javax.swing.JLabel;
 public class LabelSprite extends JLabel{
 	//LabelSprite 
 	// Otro comentario
+	// Otro comentario más
 }
