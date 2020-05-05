@@ -14,7 +14,7 @@ En estos ejemplo básicos hacemos funcionar la tecnología pero no hay diseño o
 - básicos.Movimiento: Movemos la imagen con el teclado y la rotamos
 - básicos.VariosJFramPrefabricados: Hace uso de clases extendidas de JFrame con funcionalidad
 - básicos.ConSonido: Hace uso de sonido a través de Clip. Deben ser archivos wav sin nigún tipo de procesado
-
+- básicos.Colisión: Ejemplo de botón que se mueve con ratón, cómo posicionar un elemento delante de otro y detectar una colisión
 NOTA: Archivos WAV conseguidos con [mpg123](https://www.cyberciti.biz/faq/convert-mp3-files-to-wav-files-in-linux/)
 
 ## Ejemplo dificultad media
