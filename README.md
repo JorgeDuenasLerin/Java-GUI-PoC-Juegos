@@ -55,8 +55,8 @@ Para este ejemplo hemos generado nuestros propios evento de colisión.
 Son ejemplos similares a los del Mouse, Teclado o las ventanas pero nosotros tenemos el control de cuándo y cómo dispararlos. En este caso cuando un objeto está encima de otro.
 
 Una vez que lo disparamos desde la clase principal podemos recogerlo con facilidad:
-```
 
+```
 Colisionador colisionador = Colisionador.getInstance();
 
 colisionador.addElement(etiqueta1);
@@ -65,8 +65,6 @@ colisionador.addElement(boton);
 colisionador.addColsiónListener(this);
 
 colisionador.startDetection();
-
-
 
 @Override
 public void colsión(ColsiónEvento ce) {
