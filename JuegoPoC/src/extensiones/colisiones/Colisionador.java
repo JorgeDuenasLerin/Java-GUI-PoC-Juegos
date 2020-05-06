@@ -63,13 +63,13 @@ public class Colisionador implements ActionListener {
 		listenerList.remove(ColisiónEscuchador.class, listener);
 	}
 	void lanzarColisión(ColsiónEvento evt) {
-	    Object[] listeners = listenerList.getListenerList();
-	    for (int i = 0; i < listeners.length; i = i+2) {
-	      if (listeners[i] == ColisiónEscuchador.class) {
-	        ((ColisiónEscuchador) listeners[i+1]).colsión(evt);
-	      }
-	    }
-	  }
+		Object[] listeners = listenerList.getListenerList();
+		for (int i = 0; i < listeners.length; i = i+2) {
+			if (listeners[i] == ColisiónEscuchador.class) {
+				((ColisiónEscuchador) listeners[i+1]).colsión(evt);
+			}
+		}
+	}
 
 	/*
 	 * OJO: No todo tiene que tener Singletone pero los últimos ejemplos son elementos core del juego

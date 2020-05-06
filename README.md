@@ -75,3 +75,32 @@ public void colsión(ColsiónEvento ce) {
 	System.out.println("con: " + ce.getComponentB());
 }
 ```
+
+
+### Física
+
+Siguiendo el esquema de Singletone y Timer podemos ver la clase que gestiona las fuerzas físicas.
+
+Cada elemento de juego tiene asociado un listado de fuerzas que se le aplican.
+
+```
+HashMap<JComponent,ArrayList<VectorFuerza>> elementos;
+```
+
+Hay dos tipos de fuerzas:
+- VectorFuerza: genérica, cuando se aplica se consume por rozamiento.
+- VectorGravedad: Como el vector fuerza pero no se consume y siempre va hacía abajo.
+
+
+Se pueden meter elementos en la física  
+```
+phy = Física.getInstance();
+
+phy.estableceLímite(panelDeContenido);
+phy.addElement(etiqueta1);
+```
+
+Se le pueden aplicar fuerzas
+```
+phy.addFuerza(etiqueta1, new VectorFuerza(0, -10));
+```
