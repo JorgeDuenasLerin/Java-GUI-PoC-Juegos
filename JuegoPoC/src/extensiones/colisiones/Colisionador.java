@@ -43,7 +43,7 @@ public class Colisionador implements ActionListener {
 				JComponent c1 = elementos.get(i);
 				JComponent c2 = elementos.get(j);
 				if(c1.getBounds().intersects(c2.getBounds())) {
-					ColsiónEvento ce = new ColsiónEvento(this, c1, c2);
+					ColisiónEvento ce = new ColisiónEvento(this, c1, c2);
 					lanzarColisión(ce);
 				}
 			}
@@ -62,7 +62,7 @@ public class Colisionador implements ActionListener {
 	public void removeColsiónListener(ColisiónEscuchador listener) {
 		listenerList.remove(ColisiónEscuchador.class, listener);
 	}
-	void lanzarColisión(ColsiónEvento evt) {
+	void lanzarColisión(ColisiónEvento evt) {
 		Object[] listeners = listenerList.getListenerList();
 		for (int i = 0; i < listeners.length; i = i+2) {
 			if (listeners[i] == ColisiónEscuchador.class) {

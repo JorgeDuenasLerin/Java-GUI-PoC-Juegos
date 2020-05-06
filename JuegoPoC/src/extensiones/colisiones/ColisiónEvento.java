@@ -4,11 +4,11 @@ import java.util.EventObject;
 
 import javax.swing.JComponent;
 
-public class ColsiónEvento extends EventObject {
+public class ColisiónEvento extends EventObject {
 	JComponent c1;
 	JComponent c2;
 	
-	public ColsiónEvento(Object source, JComponent c1, JComponent c2) {
+	public ColisiónEvento(Object source, JComponent c1, JComponent c2) {
 		// Quién lo genera
 	    super(source);
 	    

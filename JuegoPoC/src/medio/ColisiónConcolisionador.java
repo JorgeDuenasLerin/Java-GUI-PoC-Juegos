@@ -23,7 +23,7 @@ import javax.swing.Timer;
 
 import extensiones.colisiones.Colisionador;
 import extensiones.colisiones.ColisiónEscuchador;
-import extensiones.colisiones.ColsiónEvento;
+import extensiones.colisiones.ColisiónEvento;
 
 public class ColisiónConcolisionador implements ActionListener, ColisiónEscuchador{
 	public static void main(String[] args) {
@@ -139,8 +139,7 @@ public class ColisiónConcolisionador implements ActionListener, ColisiónEscuch
 	}
 
 	@Override
-	public void colsión(ColsiónEvento ce) {
-		// TODO Auto-generated method stub
+	public void colsión(ColisiónEvento ce) {
 		System.out.println("Colisión!");
 		System.out.println("chocó: " + ce.getComponentA());
 		System.out.println("con: " + ce.getComponentB());
