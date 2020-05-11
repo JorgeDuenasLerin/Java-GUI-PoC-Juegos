@@ -39,7 +39,12 @@ public class EjemploDB {
 			"jdbc:mysql://localhost:3306/hashtag?serverTimezone=UTC","root","1234");  
 			
 			Statement stmt=con.createStatement();  
-			ResultSet rs=stmt.executeQuery("select * from USUARIO");  
+			
+			/*stmt.execute("INSERT INTO USUARIO (ID,USUARIO,CONTRASEÑA,EMAIL)\n" + 
+			"			 VALUES\n" + 
+			"			 (7,'Pepe','$2y$10$nbm5Inx.l3F/ik5RuZa0Qu49NaFtC5i6nyYvCFLcCye6xh6GeoV3O','asd@asd.com')");*/
+	
+			ResultSet rs=stmt.executeQuery("select * from USUARIO");
 			
 			while(rs.next()) {
 				System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
